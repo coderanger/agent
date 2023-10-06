@@ -44,6 +44,10 @@ Main (unreleased)
 
 - Allow converting labels to structured metadata with Loki's structured_metadata stage. (@gonzalesraul)
 
+- Added new config options to spanmetrics processor in static mode (@ptodev):
+  - `aggregation_temporality`: configures whether to reset the metrics after flushing.
+  - `metrics_flush_interval`: configures how often to flush generated metrics.
+
 ### Other changes
 
 - Use Go 1.21.3 for builds. (@tpaschalis)
